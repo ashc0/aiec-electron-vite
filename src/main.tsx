@@ -5,9 +5,9 @@ import './samples/node-api'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>,
 )
 
 postMessage({ payload: 'removeLoading' }, '*')

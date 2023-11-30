@@ -1,4 +1,6 @@
 import React from 'react';
+// @ts-ignore
+import ImageEliminate from '@/public/pc-components/ImageEliminate/index';
 
 
 const prefix = 'https://q.aiyongtech.com/ai/ai-assisiant/imgs/';
@@ -14,7 +16,14 @@ const HomePage: React.FC = () => {
     }
     return (
         <div className={'koutu'}>
-            首页
+            <ImageEliminate
+                image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOSrvLGigp1UMyOEk5-DzkFhwpTWoKONyRQ&usqp=CAU"}
+                bodyImage={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOSrvLGigp1UMyOEk5-DzkFhwpTWoKONyRQ&usqp=CAU"} /*  */
+                maxWidth={800} /*  */
+                maxHeight={800} /*  */
+                onOk={onOk}
+                onCancel={onCancel}
+            />
         </div>
     );
 };
