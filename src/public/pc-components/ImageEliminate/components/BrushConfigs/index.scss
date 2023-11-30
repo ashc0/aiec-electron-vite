@@ -1,0 +1,50 @@
+
+.image-brush-configs{
+    width: 232px;
+    height: 138.05px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .image-brush-config-line{
+        width: 192px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .title{
+            font-size: 14px;
+            font-weight: 500;
+            color: #3D3D3D;
+        }
+        .num{
+            font-size: 12px;
+            font-weight: 600;
+            color: #7F8792;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .ant-slider{
+            margin: 0px;
+        }
+        .slider{
+            margin-left: 4px;
+            margin-right: 8px;
+            flex: 1;
+            margin-top: 1px;
+        }
+        .icon {
+            font-size: 12px;
+            color: rgba(127, 135, 146, 0.6);;
+        }
+    }
+    .margin-top-12{
+        margin-top: 12px;
+    }
+}

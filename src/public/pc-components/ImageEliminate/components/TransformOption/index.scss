@@ -1,0 +1,68 @@
+.transform-options{
+    width: 162px;
+    height: 40px;
+    border-radius: 8px;
+    background: #696969;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+    pointer-events: all;
+    .divider{
+        margin: 0px 8px;
+        width: 1px;
+        height: 12px;
+        border-left: 1px solid #fff;
+    }
+    .icon-list{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .persent-text{
+            color: #FFFFFF;
+            margin-left: 4px;
+            margin-right: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    .icon-box{
+        width: 28px;
+        height: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .icon{
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+    .icon-box-active,
+    .icon-box:hover{
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+.transform-menus{
+    width: 88px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #696969;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    .transform-menu-item{
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 500;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}

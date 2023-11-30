@@ -1,0 +1,25 @@
+.image-eliminate-key-tooltip {
+    width: 294px;
+    height: 241px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px 16px;
+    .title{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 12.68px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 14px;
+    }
+    .line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        span {
+            font-size: 14px;
+        }
+    }
+}

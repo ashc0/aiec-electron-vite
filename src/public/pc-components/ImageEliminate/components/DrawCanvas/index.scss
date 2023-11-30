@@ -1,0 +1,116 @@
+.eliminate-canvas-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 24px;
+    .canvas-backgroud{
+        background: #e3e7e9;
+        background-image: linear-gradient(45deg, #f6fafc 25%, transparent 0), linear-gradient(45deg, transparent 75%, #f6fafc 0), linear-gradient(45deg, #f6fafc 25%, transparent 0), linear-gradient(45deg, transparent 75%, #f6fafc 0);
+        background-position: 0 0, 12px 12px, 12px 12px, 24px 24px;
+        background-size: 24px 24px;
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+        .canvas-box{
+            position: absolute;
+            overflow: hidden;
+            .magnifier{
+                position: absolute;
+                box-shadow: 5px 5px 5px #333;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: rgba(0,0,0,0.6);
+                .big-canvas{
+                    transform: scale(2);
+                }
+            }
+            .matting-cursor-tip{
+                margin-bottom: -12px;
+            }
+            .matting-cursor {
+                /** 穿透画笔，触发画布点击事件 */
+                pointer-events: none;
+                display: none;
+                position: absolute;
+                left: -999px;
+                top: -999px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            #matting-cursor-box{
+                .ant-tooltip{
+                    min-width: 172px;
+                    .ant-tooltip-arrow, .ant-tooltip-content{
+                        margin-bottom: -12px;
+                    }
+                }
+            }
+        }
+        .corner-mark{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 47px;
+            height: 26px;
+            border-radius: 0px 0px 0px 8px;
+            opacity: 1;
+            background: #A1A1A1;
+            text-align: center;
+            line-height: 26px;
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+        .key-tooltip-icon-box{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(127, 135, 146, 0.4);
+            background: #fff;
+            cursor: context-menu;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .key-tooltip-icon{
+                font-size: 24px;
+                color: #7F8792;
+                opacity: 0.8;
+            }
+        }
+        .key-tooltip-icon-box:hover{
+            .key-tooltip-icon{
+                font-size: 24px;
+                color: #7F8792;
+                opacity: 1;
+            }
+        }
+    }
+
+    .transform-options-box{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+}
+
+canvas {
+    -webkit-canvas-acceleration: disable;
+}
