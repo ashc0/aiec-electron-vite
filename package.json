@@ -1,10 +1,8 @@
 {
   "name": "electron-vite-react",
-  "version": "2.2.0",
+  "version": "0.0.1",
   "main": "dist-electron/main/index.js",
-  "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
-  "license": "MIT",
+  "description": "Electron Vite React",
   "private": true,
   "debug": {
     "env": {
@@ -13,6 +11,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:web": "cross-env TARGET=web vite",
     "build": "tsc && vite build && electron-builder",
     "preview": "vite preview",
     "pree2e": "vite build --mode=test",
@@ -38,7 +37,9 @@
     "autoprefixer": "^10.4.16",
     "electron": "^26.0.0",
     "electron-builder": "^24.6.3",
+    "eslint": "^8.54.0",
     "postcss": "^8.4.31",
+    "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.5",
