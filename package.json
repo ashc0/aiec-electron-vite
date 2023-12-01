@@ -52,6 +52,6 @@
     "vite-plugin-electron-renderer": "^0.14.5"
   },
   "engines": {
-    "node": "^14.18.0 || >=16.0.0"
+    "node": "^18.16.0"
   }
 }

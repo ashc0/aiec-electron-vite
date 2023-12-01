@@ -17,8 +17,8 @@ const HomePage: React.FC = () => {
     return (
         <div className={'koutu'}>
             <ImageEliminate
-                image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOSrvLGigp1UMyOEk5-DzkFhwpTWoKONyRQ&usqp=CAU"}
-                bodyImage={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOSrvLGigp1UMyOEk5-DzkFhwpTWoKONyRQ&usqp=CAU"} /*  */
+                image={"https://q.aiyongtech.com/ai/ai-assisiant/imgs/aikou2K.jpg"}
+                bodyImage={"https://q.aiyongtech.com/ai/ai-assisiant/imgs/aikou2K.jpg"} /*  */
                 maxWidth={800} /*  */
                 maxHeight={800} /*  */
                 onOk={onOk}
