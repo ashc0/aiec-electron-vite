@@ -10,9 +10,10 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "dev:electron": "vite",
     "dev:web": "cross-env TARGET=web vite",
-    "build": "tsc && vite build && electron-builder",
+    "build:electron": "tsc && vite build && electron-builder",
+    "build:web": "tsc && cross-env TARGET=web vite build",
     "preview": "vite preview",
     "pree2e": "vite build --mode=test",
     "e2e": "playwright test"
@@ -22,6 +23,7 @@
     "@types/react-router-config": "^5.0.10",
     "antd": "^5.11.5",
     "axios": "^1.6.2",
+    "cross-env": "^7.0.3",
     "electron-updater": "^6.1.1",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^6.20.0",
