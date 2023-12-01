@@ -1,0 +1,13 @@
+{
+  // 保存时使用 ESLint 修复可修复错误
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // 定义一个默认格式化程序, 该格式化程序优先于所有其他格式化程序设置。必须是提供格式化程序的扩展的标识符。
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  // "editor.formatOnPaste": false, // required
+  // "editor.formatOnType": false, // required
+  // "editor.formatOnSave": true, // optional
+  // "editor.formatOnSaveMode": "file", // required to format on save
+  // "files.autoSave": "onFocusChange" // optional but recommended
+}
