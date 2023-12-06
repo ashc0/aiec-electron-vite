@@ -25,5 +25,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'warn',
     'class-methods-use-this': 'off',
     'max-len': ['warn', { code: 120 }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
   },
 };

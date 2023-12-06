@@ -25,6 +25,11 @@ function AboutView() {
         Count:
         {count}
       </h2>
+
+      <h2>
+        Double Count:
+        {count * 2}
+      </h2>
     </div>
   );
 }
